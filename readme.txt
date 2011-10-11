@@ -4,7 +4,7 @@ Donate link: http://cartpauj.com/donate/
 Tags: page redirect, re direct, redirect, post redirect, permanant, temporary, 307, 301, shortcode, cartpauj
 Requires at least: 2.7
 Tested up to: 3.2.1
-Stable tag: 1.0.00
+Stable tag: 1.0.01
 
 A super easy way to automatically redirect a user to another page when viewing a post/page on your site.
 
@@ -43,6 +43,10 @@ n/a
 n/a
 
 == Changelog ==
+= 1.0.01 =
+* Added output buffer to make text show up in the right place
+* Added license to main file
+* Fixed URL bug
 = 1.0.00 =
 * Initial release
 
