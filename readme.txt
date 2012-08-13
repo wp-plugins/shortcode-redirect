@@ -1,19 +1,18 @@
 === Shortcode Redirect ===
 Contributors: cartpauj
-Donate link: http://cartpauj.com/donate/
+Donate link: http://cartpauj.icomnow.com/donate/
 Tags: page redirect, re direct, redirect, post redirect, permanant, temporary, 307, 301, shortcode, cartpauj
 Requires at least: 2.7
-Tested up to: 3.2.1
-Stable tag: 1.0.01
+Tested up to: 3.5
+Stable tag: 1.0.02
 
 A super easy way to automatically redirect a user to another page when viewing a post/page on your site.
 
 == Description ==
-Shortcode Redirect is a super easy plugin which allows site owners to automatically redirect a user after a chosen amount of seconds when viewing a page or post on the site. The plugin instructions are very simple. Add a shortcode to the post/page that looks like the following [redirect url='http://somesite.com' sec='3'] the url= part is where you define the URL to redirect the user to and the sec= part is where you define how many seconds to wait before redirecting.
+Shortcode Redirect allows site owners to automatically redirect a user after a chosen amount of seconds when viewing a page or post on the site. The plugin instructions are very simple. Add a shortcode to the post/page that looks like the following [redirect url='http://somesite.com' sec='3'] the url= part is where you define the URL to redirect the user to and the sec= part is where you define how many seconds to wait before redirecting.
 
 = Donate =
-[If you like this plugin please consider donating](http://cartpauj.com/donate)
-
+[If you like this plugin please consider donating](http://cartpauj.icomnow.com/donate)
 
 = Features =
 * Works on pages and posts
@@ -31,18 +30,20 @@ Shortcode Redirect is a super easy plugin which allows site owners to automatica
 4. Done!
 
 If you have any issues please post something here:
-[Cartpauj Support Forums](http://cartpauj.com/forum "Cartpauj Support Forums")
+[Cartpauj Support Forums](http://cartpauj.icomnow.com/forum "Cartpauj Support Forums")
 
 == Note ==
 Shortcode redirect should work with older versions of WordPress as well but was not tested with anything older than 2.7
 
 == Frequently Asked Questions ==
-n/a
+* How do I get rid of the "Please wait while you are being re-directed..." line? - Later I will have an option for this, but for now, just edit the scr.php file and delete line 36 which contains that text then save the file.
 
 == Upgrade Notice ==
 n/a
 
 == Changelog ==
+= 1.0.02 =
+* Fixed a low risk security hole
 = 1.0.01 =
 * Added output buffer to make text show up in the right place
 * Added license to main file

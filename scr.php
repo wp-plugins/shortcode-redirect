@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: ShortCode Redirect
-Plugin URI: http://cartpauj.com/projects/shortcode-redirect-plugin/
+Plugin URI: http://cartpauj.icomnow.com/projects/shortcode-redirect-plugin/
 Description: This plugin allows you to add a shortcode to a page. When this shortcode is executed it re-directs the user to a pre-defined URL. You can also set how many seconds to wait before redirecting the user.
 Author: Cartpauj
-Version: 1.0.01
-Author URI: http://cartpauj.com
+Version: 1.0.02
+Author URI: http://cartpauj.icomnow.com
 
 GNU General Public License, Free Software Foundation <http://creativecommons.org/licenses/GPL/2.0/>
 This program is free software; you can redistribute it and/or modify
@@ -27,9 +27,10 @@ add_shortcode('redirect', 'scr_do_redirect');
 function scr_do_redirect($atts)
 {
 	ob_start();
-	$myURL = (isset($atts['url']) && !empty($atts['url']))?$atts['url']:"";
-	$mySEC = (isset($atts['sec']) && !empty($atts['sec']))?$atts['sec']:"0";
-	if(!empty($myURL)) {
+	$myURL = (isset($atts['url']) && !empty($atts['url']))?esc_url($atts['url']):"";
+	$mySEC = (isset($atts['sec']) && !empty($atts['sec']))?esc_attr($atts['sec']):"0";
+	if(!empty($myURL))
+  {
 ?>
 		<meta http-equiv="refresh" content="<?php echo $mySEC; ?>; url=<?php echo $myURL; ?>">
 		Please wait while you are redirected...or <a href="<?php echo $myURL; ?>">Click Here</a> if you do not want to wait.
